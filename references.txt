@@ -1,0 +1,9 @@
+references
+
+vitensor.no (vitensenteret i kristiansand og arendal)
+nordnorsk.vitensenter.no (vitensenteret i Tromsø)
+vitensenter.no (underavdeling av vitensenteret i Tromsø)
+vitensenteret.com (vitensenteret i Trondheim)
+vitensenteret.no (vitensenter innlandet Gjøvik)
+
+

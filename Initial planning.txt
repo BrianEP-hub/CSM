@@ -1,0 +1,44 @@
+Page names
+
+Home/landing
+Explore
+Exibits
+Events
+Visit us
+About us
+	Donations
+	Careeer
+	
+	
+	
+
+
+
+
+Gantt chart 
+
+Phase 1
+	Research
+		Color
+		Layout
+		Icons
+		Images
+	Design
+		Logo
+		Vector art
+		UX-design for all screens
+	
+Phase 2
+	Design
+		UX-testing
+	HTML/CSS
+		Templates
+		Initial styling
+		Layout
+		Lorem ipsum for pages
+Phase 3
+	Testing
+		Cross platform screen testing
+		Bugfixes and changes
+		
+	
