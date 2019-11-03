@@ -4,7 +4,7 @@ body{
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
-	background: #333;
+	background: #606060;
 }
 /*Feature*/
 .feature.home{
@@ -16,34 +16,37 @@ body{
 	width: auto;
 	box-shadow: 0 20px 50px rgba(0,0,0, 0.9);
 }
-/*Blockquote*/
+.banner .logo{
+	height: 100%;
+	width: auto;
+	margin: 0 3%;
+}
+/* --Blockquote-- */
 .quote{
 	height: auto;
 	overflow: hidden;
     padding-bottom: 30px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(96, 96, 96, 0.5);
 }
 blockquote{
 	font-size: 40px;
     position: relative;
 	bottom: -40px;
-    color: #F2F2F2;
-    line-height: 1.54em;
+    color: #ecedef;
+    line-height: 1.5em;
     text-align: center;
 	text-shadow: 2px 2px #2d2d2d;
 	justify-content: center;
 }
-/*Navigation */
+/* --Navigation-- */
 .navbar{
 	width: 100%;
 	height: 50px;
-	background: #333;
+	background: #606060;
 	opacity: 0.8;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
 	position: fixed;
 	top: 0;
-	z-index: 100;
+	z-index: 10;
 }
 .navbar ul{
 	display: flex;
@@ -57,24 +60,41 @@ blockquote{
 }
 .navbar ul li a{
 	display: block;
-	color: #fff;
+	color: #ecedef;
 	padding: 0 10px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 900;
-	font-family: serif;
+	font-family: "bureau-grot";
 	line-height: 50px;
+	width: auto;
 }
 .navbar ul li a.active{
-	background: #fff;
-	color: #333;
+	background: #ecedef;
+	color: #606060;
 }
 .navbar ul li a:hover{
-	background: #fff;
-	color: #333;
+	background: #ecedef;
+	color: #606060;
 	transition: 0.5s;
 }
-/*Main section*/
+input[type=checkbox]{
+	display: none;
+}
+input[type=checkbox]:checked ~ .nav{
+	display: block;
+}
+.toggle{
+	font-family: "bureau-grot";
+	text-decoration: none;
+	text-align: center;
+	color: #ecedef;
+	padding: 10px 0;
+	font-weight: 900;
+	display: none;
+	line-height: 50px;
+}
+/* --Main section-- */
 .main{
 	margin: 0;
 	padding: 0;
@@ -82,9 +102,10 @@ blockquote{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: consolas;
+	font-family: "canada-type-gibson";
 }
-/*Landing page cards */
+
+/* --Landing page cards-- */
 .container.home{
 	width: 90%;
 	position: relative;
@@ -101,7 +122,7 @@ blockquote{
 }
 .container.home .card .face.face1{
 	position: relative;
-	background: #333;
+	background: #606060;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -109,7 +130,7 @@ blockquote{
 	transform: translateY(100px);
 }
 .container.home .card:hover .face.face1{
-	background: #ff0057;
+	background: #ee374d;
 	transform: translateY(0);
 }
 .container.home .card .face.face1 .content{
@@ -125,13 +146,13 @@ blockquote{
 .container.home .card .face.face1 .content h3{
 	margin: 10px 0 0;
 	padding: 0;
-	color: #fff;
+	color: #ECEDEF;
 	text-align: center;
 	font-size: 1.5em;	
 }
 .container.home .card .face.face2{
 	position: relative;
-	background: #fff;
+	background: #ECEDEF;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -153,15 +174,15 @@ blockquote{
 	display: inline-block;
 	text-decoration: none;
 	font-weight: 900;
-	color: #333;
+	color: #606060;
 	border: 1px solid #333;
 }
 .container.home .card .face.face2 .content a:hover{
-	background: #333;
-	color: #fff;
+	background: #606060;
+	color: #ECEDEF;
 }
 
-/* Page cards without transitions */
+/* --Page cards (other)-- */
 .container.misc{
 	width: 90%;
 	position: relative;
@@ -169,6 +190,7 @@ blockquote{
 	justify-content: space-between;
 }
 .container.misc .card .face.face4{
+	position: relative;
 	width: auto;
 	height: auto;
 	transition: 0;
@@ -177,13 +199,19 @@ blockquote{
 }
 .container.misc .card .face.face4 .content{
 	position: relative;
-	background: #fff;
+	background: #ecedef;
 	display: block;
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
 	box-sizing: border-box;
 	box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+}
+.container.misc .card .face.face4 .content img{
+	float: left;
+	border-radius: 50%;
+	width: 30%;
+	height: 30%;
 }
 .container.misc .card .face.face4 .content h3{
 	margin: 1%;
@@ -198,17 +226,18 @@ blockquote{
 	text-decoration-line: underline;
 }
 .container.misc .card .face.face4 .content p{
+	display: flex;
 	margin: 1%;
 	padding: 1%;
 }
-/*Footer*/
+/* --Footer-- */
 .footer{
 	display: flex;
 	height: 100px;
 	width: 100%;
 	margin: 0 auto;
-	background-color: #fff;
-	color: #000;
+	background-color: #ecedef;
+	color: #606060;
 	font-size: 0.8em;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	position: static;
@@ -237,24 +266,48 @@ blockquote{
 	text-decoration: none;
 	justify-content: center;
 	align-content: center;
-	color: #000;
+	color: #606060;
 }
 .footer .copy{
 	float: right;
 }
 
-/* For smaller phone devices */
+/* --For smaller phone devices-- */
 @media screen and (min-width: 300px) and (max-width: 599px) and (orientation: portrait){
+	/* Banner */
+	.banner .logo{
+		width: auto;
+		clear: left;
+		margin: 0;
+	}
 	/* Navigation */
+	.navbar ul{
+		display: none;
+		position: static;
+	}
+	.navbar li a{
+		background-color: #606060;
+		opacity: 0.8;
+		width: 100%;
+	}
+	.navbar ul li, .navbar li a{
+		width: 100%;
+		float: right;
+	}
+	.toggle{
+		display: block;
+		top: 0;
+		float: right;
+	}
 	/*Splash feature */
 	.feature{
 		height: 200px;
 	}
 	blockquote{
-		font-size: 20px;
+		font-size: 40px;
 	}
 	/* Main section */ 
-	.container{
+	.container.home{
 		width: auto;
 		display: block;
 	}
@@ -281,19 +334,41 @@ blockquote{
 		display: block;
 	}
 }
-/* For larger phones and portrait tablets */
+/* --For larger phones and portrait tablets-- */
 @media only screen and (min-width: 600px) and (max-width: 1023px){
-	/* Mavigation */
-	
+	/* Logo */
+	.banner .logo{
+		clear: left;
+	}
+	/* Navigation */
+	.navbar ul{
+		display: none;
+		position: static;
+		margin: 0;
+	}
+	.navbar li a{
+		background-color: #606060;
+		opacity: 0.8;
+		width: 100%;
+	}
+	.navbar ul li, .navbar li a{
+		width: 100%;
+		float: right;
+	}
+	.toggle{
+		display: block;
+		top: 0;
+		float: right;
+	}
 	/* Splash feature */
 	.feature{
 		height: 400px;
 	}
 	blockquote{
-		font-size: 30px;
+		font-size: 40px;
 	}
 	/* Main section */
-	.container{
+	.container.home{
 		width: auto;
 		display: block;
 	}
